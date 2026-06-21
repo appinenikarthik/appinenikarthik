@@ -88,11 +88,31 @@ Multi-turn LLM chatbot using **Gemini API + LangChain** with Retrieval-Augmented
 
 ---
 
-### 🐍 Contribution Snake
+name: Generate Snake
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [ main ]
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/appinenikarthik/appinenikarthik/output/github-contribution-grid-snake-dark.svg" />
-</p>
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 ---
 
