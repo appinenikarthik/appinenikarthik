@@ -86,6 +86,13 @@ Multi-turn LLM chatbot using **Gemini API + LangChain** with Retrieval-Augmented
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=appinenikarthik" />
 </p>
 
+### 🐍 Contribution Snake
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/appinenikarthik/appinenikarthik/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/appinenikarthik/appinenikarthik/output/github-contribution-grid-snake.svg">
+  <img alt="snake" src="https://raw.githubusercontent.com/appinenikarthik/appinenikarthik/output/github-contribution-grid-snake.svg">
+</picture>
+
 
 ### 🏆 Achievements
 - 🌟 **Google Student Ambassador** (Aug 2025 – Dec 2025) — promoted Google AI tools & technologies on campus
